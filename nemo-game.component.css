@@ -1,0 +1,62 @@
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  background: url('src/assets/image1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: #f1f1f1;
+}
+
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.circle-row {
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  flex: 1;
+  max-width: 20%;
+  margin: 5px;
+  border-radius: 50%;
+  background-size: cover;
+  cursor: pointer;
+  width: auto; 
+  height: auto;/* Adjust the width to your desired size */
+  
+}
+
+.circle img {
+  width: 50%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+
+
+h1{
+  font-size: 50px;
+}
+
+p{
+  font-size: 19px;
+}
+
+.message {
+  font-size: 29px;
+  color: white;
+}

@@ -1,0 +1,20 @@
+
+<div class="container">
+  <h1>Nemo Fish Game</h1>
+  <p>You have {{ attempts }} attempts to find Nemo fish.</p>
+  <p>Attempts remaining: <span id="attempts">{{ attempts }}</span></p>
+  <div id="circles" class="circle-container">
+    <div class="circle-row">
+      <div class="circle" (click)="handleCircleClick(i)" *ngFor="let circle of circles.slice(0, 5); let i = index">
+        <img [src]="circle" alt="Circle" />
+      </div>
+    </div>
+    
+    <div class="circle-row">
+      <div class="circle" (click)="handleCircleClick(i + 5)" *ngFor="let circle of circles.slice(5, 10); let i = index">
+        <img [src]="circle" alt="Circle" />
+      </div>
+    </div>
+  </div>
+  <p id="message">{{ message }}</p>
+</div>
